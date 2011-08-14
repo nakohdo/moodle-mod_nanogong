@@ -1,0 +1,60 @@
+<?php // $Id: nanogong.php,v 3.3 2010/01/11 00:00:00 gibson Exp $
+// Russian language by Learngle. More info at www.learngle.com
+
+$string['nanogong'] = 'Аудио-ответ';
+$string['modulenameplural'] = 'Аудио-ответы';
+$string['modulename'] = 'Аудио-ответ';
+$string['nanogongname'] = 'Название';
+$string['nanogongmessage'] = 'Текст задания';
+$string['nanogongcolor'] = 'Цвет (в формате \'#rrggbb\')';
+$string['nanogongmaxmessages'] = 'Максимальное количество ответов (0 = неограниченно)';
+$string['nanogongmaxduration'] = 'Максимальная длительность аудио в секундах (1-1200)';
+$string['nanogongmaxscore'] = 'Максимум баллов';
+$string['nanogongallowguestaccess'] = 'Разрешить гостевой доступ';
+$string['description'] = 'Описание';
+$string['submitnewmessage'] = 'Ваш аудио-ответ';
+$string['yourmessage'] = 'Ваш ответ';
+$string['messagelist'] = 'Список ответов';
+$string['student'] = 'Ученик';
+$string['submitdate'] = 'Дата ответа';
+$string['timeedited'] = 'Редактировано';
+$string['audiomessage'] = 'Аудио';
+$string['textmessage'] = 'Текст';
+$string['title'] = 'Заголовок (необязательно)';
+$string['message'] = 'Ответ';
+$string['commentedby'] = 'Учитель';
+$string['comments'] = 'Комментариии';
+$string['score'] = 'Оценка';
+$string['locked'] = 'Блокировка';
+$string['altlocked'] = 'Этот ответ заблокирован. Он не может быть редактирован или удален учеником.';
+$string['altopen'] = 'Этот ответ не заблокирован для ученика.';
+$string['confirmdelete'] = 'Вы уверены что хотите удалить этот ответ?';
+$string['confirmlock'] = 'Обновление ответа.\\\nВы хотите заблокировать ответ, чтобы ученик не мог его редактировать или удалить?';
+$string['submitmessage'] = 'Отправить';
+$string['editmessage'] = 'Редактировать';
+$string['deletemessage'] = 'Удалить';
+$string['updatemessage'] = 'Обновить';
+$string['newmessage'] = 'Новый ответ';
+$string['lockallmessage'] = 'Заблокировать';
+$string['unlockallmessage'] = 'Разблокировать';
+$string['messagesubmitted'] = 'Ваш аудио-ответ успешно отправлен.';
+$string['messageedited'] = 'Ваш аудио-ответ успешно обновлен.';
+$string['messagedeleted'] = 'Ваш аудио-ответ удален.';
+$string['messageslocked'] = 'Все аудио-ответы заблокированы.';
+$string['messagesunlocked'] = 'Все аудио-ответы разблокированы.';
+$string['guestaccessnotallow'] = 'Гостевой доступ запрещен.';
+$string['messagenotfound'] = 'Ответ не существует.';
+$string['submitfailed'] = 'Ваш аудио-ответ не отправлен.';
+$string['editfailed'] = 'Ваш аудио-ответ не обновлен.';
+$string['deletefailed'] = 'Ваш аудио-ответ не удален.';
+$string['lockfailed'] = 'Все аудио-ответы не заблокированы.';
+$string['unlockfailed'] = 'Все аудио-ответы не разблокированы.';
+$string['lockerror'] = 'Аудио-ответ заблокирован. У вас нет прав для его редактирования или удаления.';
+$string['recordernotready'] = 'Аудио-рекордер не готов.\\\nПожалуйста обновите страницу и попробуйте еще раз.';
+$string['norecording'] = 'Вы должны записать аудио с помощью рекордера.';
+$string['uploadfailure'] = 'Аудио-рекордер не смог загрузить файл ответа на сайт.\\\nПожалуйста попробуйте еще раз.';
+$string['pathmissing'] = 'В этом ответе нет аудио.';
+$string['notincourse'] = 'Вы не зарегистрированы на этот курс.';
+$string['maxmessagereached'] = 'Вы достигли максимально разрешенного количества аудио-ответов.';
+
+?>
