@@ -23,7 +23,18 @@
         $navigation = '';
     }
 
-    print_header("$course->shortname: $strnanogongs", "$course->fullname", "$navigation $strnanogongs", "", "", true, "", navmenu($course));
+    $cm = get_coursemodule_from_id('nanogong',$id);
+    $nav = build_navigation("$navigation $strnanogongs", $cm);
+    print_header(
+        "$course->shortname: $strnanogongs",
+        "$course->fullname",
+        $nav,
+        "",
+        "",
+        true,
+        "",
+        navmenu($course)
+     );
 
 /// Get all the appropriate data
 
@@ -74,4 +85,3 @@
 
     print_footer($course);
 
-?>

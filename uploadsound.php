@@ -45,4 +45,3 @@
         error_reporting($el);
     }
 
-?>

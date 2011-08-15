@@ -12,7 +12,8 @@
     $action = optional_param('action', 0, PARAM_ALPHA); // Action
 
     if ($id) {
-        if (! $cm = get_record("course_modules", "id", $id)) {
+//        if (! $cm = get_record("course_modules", "id", $id)) {
+        if (! $cm = get_coursemodule_from_id('nanogong',$id)) {
             error("Course Module ID was incorrect");
         }
     
@@ -55,10 +56,17 @@
     $strnanogongs = get_string("modulenameplural", "nanogong");
     $strnanogong  = get_string("modulename", "nanogong");
 
-    print_header("$course->shortname: $nanogong->name", "$course->fullname",
-                 "$navigation <a href=index.php?id={$course->id}>$strnanogongs</a> -> {$nanogong->name}", 
-                  "", "", true, update_module_button($cm->id, $course->id, $strnanogong), 
-                  navmenu($course, $cm));
+    $navstring = "<a href=index.php?id={$course->id}>$strnanogongs</a> -> {$nanogong->name}";
+    $navigation = build_navigation($navstring, $cm);
+    print_header(
+      "$course->shortname: $nanogong->name",
+      "$course->fullname",
+      $navigation,
+      "",
+      "",
+      true,
+      update_module_button($cm->id, $course->id, $strnanogong),
+      navmenu($course, $cm));
 ?>
 <br />
 <?php
